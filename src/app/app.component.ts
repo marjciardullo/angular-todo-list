@@ -8,6 +8,7 @@ import { Component, VERSION } from '@angular/core';
 export class AppComponent {
   item: string = '';
   list: string[] = [];
+  meuStorage = localStorage;
 
   adicionarItem() {
     this.list.push(this.item);
