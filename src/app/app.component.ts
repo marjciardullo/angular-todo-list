@@ -13,5 +13,7 @@ export class AppComponent {
     this.list.push(this.item);
   }
 
-  removerItem() {}
+  removerItem(i: number) {
+    this.list.splice(i, 1);
+  }
 }
