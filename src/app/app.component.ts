@@ -12,9 +12,7 @@ export class AppComponent {
 
   adicionarItem() {
     this.list.push(this.item);
-    for (let i = 0; i <= this.list.length; i++) {
-      localStorage.setItem('item', this.list[i]);
-    }
+    localStorage.setItem('item', this.item);
   }
 
   removerItem(i: number) {
