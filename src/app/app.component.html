@@ -6,5 +6,7 @@
 <hr />
 
 <ul>
-  <li ngFor="let j of list"></li>
+  <li *ngFor="let j of list; index as i">
+    {{ j }} <button (click)="removerItem(i)">Delete</button>
+  </li>
 </ul>
